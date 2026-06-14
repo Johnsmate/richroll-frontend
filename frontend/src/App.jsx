@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import io from 'socket.io-client';
 
 // เชื่อมต่อไปยังเซิร์ฟเวอร์หลังบ้านพอร์ต 3001
-const socket = io('http://localhost:3001');
+const socket = io('https://richroll-backend-production.up.railway.app');
 
 const BOARD_LAYOUT = [
   { id: 0, name: "START", color: "#ef4444", type: "special" },
