@@ -1,5 +1,11 @@
 {
   "dependencies": {
+<<<<<<< HEAD
     "socket.io-client": "^4.8.3"
+=======
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "socket.io": "^4.8.3"
+>>>>>>> 2cde319f839086f146dedb76d60379ccde74be68
   }
 }
