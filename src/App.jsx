@@ -3,6 +3,25 @@ const http = require('http');
 const { Server } = require('socket.io');
 const cors = require('cors');
 
+import React, { useState, useEffect } from 'react';
+import io from 'socket.io-client';
+import './App.css';
+
+// บรรทัดสำคัญ: เชื่อมต่อไปยังเซิร์ฟเวอร์ Cloud บน Railway แทนเครื่องตัวเอง
+const socket = io('https://richroll-backend-production.up.railway.app');
+
+function App() {
+  // --- (โค้ดฝั่งหน้าบ้าน, บอร์ดเกม, ปุ่มทอยลูกเต๋า, หน้าจอ UI เดิมของคุณทั้งหมด) ---
+  
+  return (
+    <div className="App">
+      {/* หน้าตาเกมเศรษฐีสีกรมท่าของคุณ */}
+      <h1>Richroll Game</h1>
+    </div>
+  );
+}
+
+export default App;
 const app = express();
 app.use(cors());
 
